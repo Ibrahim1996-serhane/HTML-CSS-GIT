@@ -1,1 +1,22 @@
 /* Add your CSS code below */
+.messages {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+div.message.message--unread {
+  border-left-style: solid;
+  border-left-color: coral;
+}
+time.message__time.message__time--old {
+  background-color: red;
+  opacity: 0.2;
+}
