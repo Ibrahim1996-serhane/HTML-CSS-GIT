@@ -6,6 +6,18 @@
     <title>23 - Blog Comments - HTML, CSS and Git Exercises</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/week3-forms.css" />
+    <style>
+      .button {
+        background-color: rgb(31, 121, 180);
+        border-radius: 1px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+      }
+    </style>
   </head>
 
   <body>
@@ -32,6 +44,13 @@
           <p>Add your comments and let us know what you think!</p>
 
           <!-- Your comment form goes here -->
+          <form method="GET">
+            <label for="comment">Add Your Message</label>
+            <br /><br />
+            <textarea id="comment" name="comment" rows="4" cols="50"> </textarea>
+            <br /><br />
+            <input type="submit" class="button" value="Send Comment" color="red" />
+          </form>
         </div>
       </main>
     </div>
