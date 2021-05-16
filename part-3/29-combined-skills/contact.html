@@ -12,9 +12,10 @@
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
-        <div class="site-header__title">C.Y.F</div>
-        <div class="main-nav">
+      <header class="site-header">
+        <div class="site-header__title">Codi</div>
+
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
               <a href="index.html">Latest</a>
@@ -26,7 +27,7 @@
               <a href="contact.html">Contact</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <form class="site-search" action="/search">
           <label for="search-input">
             Search
@@ -48,20 +49,41 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
-
+      </header>
       <main>
         <h1>Contact Us</h1>
         <p>Send us an email if you would like to contact us.</p>
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
           </div>
           <div class="contact-form__field">
+            <label for="email"> Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="contact-form__field">
+            <fieldset>
+              <legend>What branch are you interested in?</legend>
+              <input type="checkbox" id="1" name="branch" value="1" />
+              <label for="1"> London</label>
+              <br />
+              <br />
+              <input type="checkbox" id="2" name="branch" value="2" />
+              <label for="2"> Glasgow</label>
+              <br />
+              <br />
+              <input type="checkbox" id="3" name="branch" value="3" />
+              <label for="3"> Manchester</label>
+            </fieldset>
+          </div>
+          <div class="contact-form__field">
+            <label for="message">Message</label>
             <textarea
               name="message"
+              id="message"
               placeholder="Your message should not be longer than 200 words."
+              required
             ></textarea>
           </div>
           <button type="submit">Send</button>
@@ -74,7 +96,7 @@
             href="https://github.com/coditech/Submissions/tree/master/Exercises/html-css-git-exercises"
             >Built</a
           >
-          with ♥ for <a href="https://codi.tech/">Codi</a>.
+          with <span class="ingredien">♥</span>for <a href="https://codi.tech/">Codi</a>.
         </p>
         <p>
           <svg

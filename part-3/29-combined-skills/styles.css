@@ -1,1 +1,38 @@
 /* Add your own CSS code below */
+.ingredien {
+  color: #c85308;
+}
+.main-nav__list {
+  display: flex;
+  justify-content: space-around;
+  gap: 26px;
+}
+@media screen and (min-width: 767px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .views {
+    display: flex;
+  }
+  .views a {
+    margin-left: 18px;
+  }
+
+  .views .views__all {
+    margin-left: auto;
+  }
+}
+.main-article {
+  max-width: 50em;
+}
+.site-content {
+  justify-content: center;
+  display: flex;
+}
+.main-article p {
+  line-height: 30px;
+}
+.ingredie {
+  font-size: 0.75em;
+}
