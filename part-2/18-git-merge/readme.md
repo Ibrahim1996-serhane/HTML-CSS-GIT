@@ -1,4 +1,4 @@
-# Git Merging with Pull Requests
+a# Git Merging with Pull Requests
 
 In [exercise 8](/week-1/8-git-branch) you created two branches. The links were red in one branch and green in the other, so that you could quickly show your boss both options. She has decided she doesn't like either colour. Instead, she wants the links in a dark orange.
 
